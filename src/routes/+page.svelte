@@ -36,9 +36,15 @@ onMount(() => {
     <img class="header-image" src="src/images/Shibaventures.png" alt="Shibaventures">
 
     <div class="header-text">
-        <h1>Welcome to our Shiba Inu-dedicated community project, where you can not only purchase unique NFTs, but also contribute to the burning of Shib Tokens.</h1>
-        <h2>By participating in this project, you are not only adding to your art collection, but also increasing the value of your NFTs through the burning of tokens. Our NFTs are naturally more valuable because of this process. We hope you enjoy browsing our collection!</h2>
-        <h2>Start of the Project: January 2023</h2>
+        {#if width > 1000}
+            <h1>Welcome to our Shiba Inu-dedicated community project, where you can not only purchase unique NFTs, but also contribute to the burning of Shib Tokens.</h1>
+            <h2>By participating in this project, you are not only adding to your art collection, but also increasing the value of your NFTs through the burning of tokens. Our NFTs are naturally more valuable because of this process. We hope you enjoy browsing our collection!</h2>
+            <h2>Start of the Project: January 2023</h2>
+        {:else}
+            <h2>Welcome to our Shiba Inu-dedicated community project, where you can not only purchase unique NFTs, but also contribute to the burning of Shib Tokens.</h2>
+            <h3>By participating in this project, you are not only adding to your art collection, but also increasing the value of your NFTs through the burning of tokens. Our NFTs are naturally more valuable because of this process. We hope you enjoy browsing our collection!</h3>
+            <h3>Start of the Project: January 2023</h3>
+        {/if}
     </div>
 </div>
 {#if width > 1000}
