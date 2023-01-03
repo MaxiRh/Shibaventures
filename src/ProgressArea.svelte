@@ -1,0 +1,101 @@
+<script>
+    import ProgressBar from './progressBar.svelte';
+
+    let showProgressBars = true;
+
+    function toggleProgressBars(){
+        showProgressBars = !showProgressBars;
+    }
+
+</script>
+<div class="main-container">
+    <div class="collection-progress" class:active ={showProgressBars}>
+        <button class = "progressButton" on:click={toggleProgressBars}>
+            {#if showProgressBars}
+                <h2>Hide Collection Progress</h2>
+            {:else}
+                <h2>Show Collection Progress</h2>
+            {/if}
+        </button>
+        {#if showProgressBars}
+            <div class="spacer"/>
+            <ProgressBar progress={38} description="Pixelation Collection:" text="This collection is almost done." maxAmount={42} date="January 2023"/>
+            <div class="spacer"/>
+            <ProgressBar progress={4} description="Strategic Movement:" text="This collection just got started" maxAmount={36} date="Mid February 2023"/>
+            <div class="spacer"/>
+            <ProgressBar progress={0} description="To the Stars:" text="" date="Mid March 2023"/>
+            <div class="spacer"/>
+            <ProgressBar progress={0} description="Handful of Emotions:" text="" date="May 2023"/>
+            <div class="spacer"/>
+            <ProgressBar progress={0} description="Limited Edition:" text="" date="continuously"/>
+            <div class="spacer"/>
+        {/if}
+    </div>
+    <div class="image-container">
+        <img class="image" src={"src/images/BackgroundThumbsUpShiba.png"} alt={''}/>
+    </div>
+</div>
+
+<style>
+
+    .main-container {
+        position:relative;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .image-container {
+            z-index:0;
+            position:absolute;
+            top: 0;
+            right: 0;
+                
+    }
+
+    .image{
+        max-width: 100%;
+        max-height: 700px;
+        object-fit: cover;
+    }
+
+    .progressButton {
+        width: 100%;
+        justify-content: left;
+        height: 40px;
+        position:relative;
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        padding-bottom: 7%;
+        background-color: #816439;
+    }
+
+    .collection-progress {
+        margin-left: 5%;
+        width: 50%;
+        justify-content: left;
+        border: 2px solid black;
+        border-radius: 0px;
+        z-index:1;
+    }
+
+    .collection-progress.active {
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        background-color: rgb(52, 52, 54, 0.7);
+        color: white;
+    }
+
+    .spacer {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    h2{
+        color:white;
+    }
+    
+    button:hover{
+        filter: brightness(0.8);
+    }
+</style>
