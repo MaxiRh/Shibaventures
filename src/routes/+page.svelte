@@ -137,6 +137,7 @@ const redLines = new URL('../images/RedMirrorImage.png', import.meta.url).href
     .background-image{
         background-repeat: no-repeat;
         background-position: center;
+        height: 400px;
     }
 
     .spacer {
