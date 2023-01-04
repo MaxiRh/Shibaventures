@@ -11,9 +11,7 @@ let buttonSoonText = "Release soon";
   <div class="buttons">
 
     <button style="opacity: 1">
-      {#if pixelation}
       <img src={pixelation} alt='Pixelation Collection' />
-      {/if}
       Collection: Pixelation
     </button>
   </div>
@@ -22,9 +20,7 @@ let buttonSoonText = "Release soon";
 
   <div class="buttons">
     <button style="opacity: 0.9">
-      {#if soonImage}
       <img src={soonImage} alt={buttonSoonText} />
-      {/if}
       Collection: Strategic Movement
     </button>
   </div>
@@ -33,9 +29,7 @@ let buttonSoonText = "Release soon";
 
   <div class="buttons">
     <button style="opacity: 0.9">
-      {#if soonImage}
       <img src={soonImage} alt={buttonSoonText} />
-      {/if}
       Collection: To the Stars
     </button>
   </div>
@@ -44,9 +38,7 @@ let buttonSoonText = "Release soon";
 
   <div class="buttons">
     <button style="opacity: 0.9">
-      {#if soonImage}
       <img src={soonImage} alt={buttonSoonText} />
-      {/if}
       Collection: Load of Emotions
     </button>
   </div>
@@ -55,9 +47,7 @@ let buttonSoonText = "Release soon";
   
   <div class="buttons">
     <button style="opacity: 0.9">
-      {#if soonImage}
       <img src={soonImage} alt={buttonSoonText} />
-      {/if}
       Limited NFTs
     </button>
   </div>

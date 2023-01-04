@@ -3,7 +3,6 @@
 
 import CollectionButton from '../CollectionButton.svelte';
 import MenuButton from '../MenuButton.svelte';
-import NavBar from '../NavBar.svelte'
 import CollectionFields from '../CollectionFields.svelte';
 import ProgressArea from '../ProgressArea.svelte';
 import ContactArea from '../ContactArea.svelte';
