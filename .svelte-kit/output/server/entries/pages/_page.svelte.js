@@ -7,33 +7,33 @@ const css$8 = {
 let buttonSoonText = "Release soon";
 const CollectionButton = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   const pixelation = new URL("./images/Pixelation.png", import.meta.url).href;
-  const soonImage = new URL("./images/ShibaWebsiteSoonCover.png", import.meta.url).href;
+  const soonImage = new URL("./images/SoonCover.png", import.meta.url).href;
   $$result.css.add(css$8);
-  return `<div class="${"buttons svelte-9svarx"}"><button style="${"opacity: 1"}" class="${"svelte-9svarx"}">${pixelation ? `<img${add_attribute("src", pixelation, 0)} alt="${"Pixelation Collection"}" class="${"svelte-9svarx"}">` : ``}
+  return `<div class="${"buttons svelte-9svarx"}"><button style="${"opacity: 1"}" class="${"svelte-9svarx"}"><img${add_attribute("src", pixelation, 0)} alt="${"Pixelation Collection"}" class="${"svelte-9svarx"}">
       Collection: Pixelation
     </button></div>
 
   <div class="${"spacer svelte-9svarx"}"></div>
 
-  <div class="${"buttons svelte-9svarx"}"><button style="${"opacity: 0.9"}" class="${"svelte-9svarx"}">${soonImage ? `<img${add_attribute("src", soonImage, 0)}${add_attribute("alt", buttonSoonText, 0)} class="${"svelte-9svarx"}">` : ``}
+  <div class="${"buttons svelte-9svarx"}"><button style="${"opacity: 1"}" class="${"svelte-9svarx"}"><img${add_attribute("src", soonImage, 0)}${add_attribute("alt", buttonSoonText, 0)} class="${"svelte-9svarx"}">
       Collection: Strategic Movement
     </button></div>
 
   <div class="${"spacer svelte-9svarx"}"></div>
 
-  <div class="${"buttons svelte-9svarx"}"><button style="${"opacity: 0.9"}" class="${"svelte-9svarx"}">${soonImage ? `<img${add_attribute("src", soonImage, 0)}${add_attribute("alt", buttonSoonText, 0)} class="${"svelte-9svarx"}">` : ``}
+  <div class="${"buttons svelte-9svarx"}"><button style="${"opacity: 0.9"}" class="${"svelte-9svarx"}"><img${add_attribute("src", soonImage, 0)}${add_attribute("alt", buttonSoonText, 0)} class="${"svelte-9svarx"}">
       Collection: To the Stars
     </button></div>
   
   <div class="${"spacer svelte-9svarx"}"></div>
 
-  <div class="${"buttons svelte-9svarx"}"><button style="${"opacity: 0.9"}" class="${"svelte-9svarx"}">${soonImage ? `<img${add_attribute("src", soonImage, 0)}${add_attribute("alt", buttonSoonText, 0)} class="${"svelte-9svarx"}">` : ``}
+  <div class="${"buttons svelte-9svarx"}"><button style="${"opacity: 0.9"}" class="${"svelte-9svarx"}"><img${add_attribute("src", soonImage, 0)}${add_attribute("alt", buttonSoonText, 0)} class="${"svelte-9svarx"}">
       Collection: Load of Emotions
     </button></div>
   
   <div class="${"spacer svelte-9svarx"}"></div>
   
-  <div class="${"buttons svelte-9svarx"}"><button style="${"opacity: 0.9"}" class="${"svelte-9svarx"}">${soonImage ? `<img${add_attribute("src", soonImage, 0)}${add_attribute("alt", buttonSoonText, 0)} class="${"svelte-9svarx"}">` : ``}
+  <div class="${"buttons svelte-9svarx"}"><button style="${"opacity: 0.9"}" class="${"svelte-9svarx"}"><img${add_attribute("src", soonImage, 0)}${add_attribute("alt", buttonSoonText, 0)} class="${"svelte-9svarx"}">
       Limited NFTs
     </button>
   </div>`;
@@ -60,7 +60,6 @@ const MenuButton = create_ssr_component(($$result, $$props, $$bindings, slots) =
     <div class="${"image-container svelte-tslbex"}"><img class="${"image svelte-tslbex"}"${add_attribute("src", "", 0)}${add_attribute("alt", "", 0)}></div></div>
 </body>`;
 });
-const NavBar_svelte_svelte_type_style_lang = "";
 const CollectionFields_svelte_svelte_type_style_lang = "";
 const css$6 = {
   code: ".container.svelte-1w1wyli{position:relative;display:flex;justify-content:center;padding-bottom:3%;padding-top:3%}.collection-topic.svelte-1w1wyli{width:18%;border:2px solid black;border-radius:25px;margin-right:1%;background-color:rgba(0,0,0,0.6);color:#fff}.header.svelte-1w1wyli{padding-top:25px;padding-bottom:5%;padding-left:5%;align-items:center}.collection-description.svelte-1w1wyli{width:40%;border:2px solid black;border-radius:25px;background-color:rgba(0,0,0,0.6);color:#fff}.description.svelte-1w1wyli{align-items:center;padding:5px}h1.svelte-1w1wyli{position:relative;display:flex;justify-content:center}",
@@ -254,7 +253,7 @@ const BurnProof = create_ssr_component(($$result, $$props, $$bindings, slots) =>
 });
 const _page_svelte_svelte_type_style_lang = "";
 const css = {
-  code: '.header-text.svelte-1vxq0gi{width:80%;margin:0 auto;text-align:center;color:white;border:2px solid black;background-color:rgba(0,0,0,0.6);border-radius:15px}.menu-area.svelte-1vxq0gi{margin-bottom:10px}.collection-area.svelte-1vxq0gi{margin-top:10px}.background-image.svelte-1vxq0gi{background-repeat:no-repeat;background-position:center}.background-image-redline.svelte-1vxq0gi{background-position:right;background-repeat:no-repeat;background-position:center}.spacer.svelte-1vxq0gi{margin-top:40px;margin-bottom:40px}.big-spacer.svelte-1vxq0gi{margin-bottom:300px}h1.svelte-1vxq0gi{text-align:center}h2.svelte-1vxq0gi{text-align:center}.header-image.svelte-1vxq0gi{align-items:center;justify-content:center;width:100%;height:auto}body.svelte-1vxq0gi{background:linear-gradient(to bottom, #FBCE8C, #aa8650)\n    }.svelte-1vxq0gi{font-family:"heebo",Helvetica,Arial,sans-serif}',
+  code: '.header-text.svelte-1lyiawv{width:80%;margin:0 auto;text-align:center;color:white;border:2px solid black;background-color:rgba(0,0,0,0.6);border-radius:15px}.menu-area.svelte-1lyiawv{margin-bottom:10px}.collection-area.svelte-1lyiawv{margin-top:10px}.background-image.svelte-1lyiawv{background-repeat:no-repeat;background-position:center}.spacer.svelte-1lyiawv{margin-top:40px;margin-bottom:40px}.big-spacer.svelte-1lyiawv{margin-bottom:300px}h1.svelte-1lyiawv{text-align:center}h2.svelte-1lyiawv{text-align:center}.header-image.svelte-1lyiawv{align-items:center;justify-content:center;width:100%;height:auto}body.svelte-1lyiawv{background:linear-gradient(to bottom, #FBCE8C, #aa8650)\n    }.svelte-1lyiawv{font-family:"heebo",Helvetica,Arial,sans-serif}',
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -266,13 +265,13 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   if ($$props.prerender === void 0 && $$bindings.prerender && prerender !== void 0)
     $$bindings.prerender(prerender);
   $$result.css.add(css);
-  return `<body class="${"svelte-1vxq0gi"}"><div class="${"header-image svelte-1vxq0gi"}"><img class="${"header-image svelte-1vxq0gi"}"${add_attribute("src", imgUrl, 0)} alt="${"Shibaventures"}">
+  return `<body class="${"svelte-1lyiawv"}"><div class="${"header-image svelte-1lyiawv"}"><img class="${"header-image svelte-1lyiawv"}"${add_attribute("src", imgUrl, 0)} alt="${"Shibaventures"}">
 
-    <div class="${"header-text svelte-1vxq0gi"}">${`<h2 class="${"svelte-1vxq0gi"}">Welcome to our Shiba Inu-dedicated community project, where you can not only purchase unique NFTs, but also contribute to the burning of Shib Tokens.</h2>
-            <h3 class="${"svelte-1vxq0gi"}">By participating in this project, you are not only adding to your art collection, but also increasing the value of your NFTs through the burning of tokens. Our NFTs are naturally more valuable because of this process. We hope you enjoy browsing our collection!</h3>
-            <h3 class="${"svelte-1vxq0gi"}">Start of the Project: January 2023</h3>`}</div></div>
+    <div class="${"header-text svelte-1lyiawv"}">${`<h2 class="${"svelte-1lyiawv"}">Welcome to our Shiba Inu-dedicated community project, where you can not only purchase unique NFTs, but also contribute to the burning of Shib Tokens.</h2>
+            <h3 class="${"svelte-1lyiawv"}">By participating in this project, you are not only adding to your art collection, but also increasing the value of your NFTs through the burning of tokens. Our NFTs are naturally more valuable because of this process. We hope you enjoy browsing our collection!</h3>
+            <h3 class="${"svelte-1lyiawv"}">Start of the Project: January 2023</h3>`}</div></div>
 ${`${validate_component(BurnBar, "BurnBar").$$render($$result, { margin: 15 }, {}, {})}
-    <style class="${"svelte-1vxq0gi"}">.background-image{
+    <style class="${"svelte-1lyiawv"}">.background-image{
             background-size: cover;
         }
     </style>`}
@@ -281,24 +280,24 @@ ${`${validate_component(BurnBar, "BurnBar").$$render($$result, { margin: 15 }, {
 
 
 
-<div class="${"button-menu svelte-1vxq0gi"}"><div class="${"background-image svelte-1vxq0gi"}" style="${"background-image: url(" + escape(blueLines, true) + ")"}"><div class="${"big-spacer svelte-1vxq0gi"}"></div>
-        <div class="${"menu-area svelte-1vxq0gi"}">${validate_component(MenuButton, "MenuButton").$$render($$result, {}, {}, {})}</div></div>
-    <div class="${"spacer svelte-1vxq0gi"}"></div>
-    <h1 class="${"svelte-1vxq0gi"}">Burn proof section </h1>
+<div class="${"button-menu svelte-1lyiawv"}"><div class="${"background-image-redline svelte-1lyiawv"}" style="${"background-image: url(" + escape(blueLines, true) + ")"}"><div class="${"big-spacer svelte-1lyiawv"}"></div>
+        <div class="${"menu-area svelte-1lyiawv"}">${validate_component(MenuButton, "MenuButton").$$render($$result, {}, {}, {})}</div></div>
+    <div class="${"spacer svelte-1lyiawv"}"></div>
+    <h1 class="${"svelte-1lyiawv"}">Burn proof section </h1>
     ${validate_component(BurnProof, "BurnProof").$$render($$result, {}, {}, {})}
 
-    <div class="${"big-spacer svelte-1vxq0gi"}"></div>
+    <div class="${"big-spacer svelte-1lyiawv"}"></div>
     
-    <div class="${"background-image svelte-1vxq0gi"}" style="${"background-image: url(" + escape(greenLines, true) + ")"}">${validate_component(CollectionFields, "CollectionFields").$$render($$result, {}, {}, {})}
+    <div class="${"background-image svelte-1lyiawv"}" style="${"background-image: url(" + escape(greenLines, true) + ")"}">${validate_component(CollectionFields, "CollectionFields").$$render($$result, {}, {}, {})}
 
-        <div class="${"big-spacer svelte-1vxq0gi"}"></div></div>
+        <div class="${"big-spacer svelte-1lyiawv"}"></div></div>
 
-    <div class="${"collection-area svelte-1vxq0gi"}"><h1 class="${"svelte-1vxq0gi"}">The NFT Collections</h1>
-        <div class="${"background-image-redline svelte-1vxq0gi"}" style="${"background-image: url(" + escape(redLines, true) + ")"}">${validate_component(CollectionButton, "CollectionButton").$$render($$result, {}, {}, {})}</div></div></div>
-<div class="${"big-spacer svelte-1vxq0gi"}"></div>
+    <div class="${"collection-area svelte-1lyiawv"}"><h1 class="${"svelte-1lyiawv"}">The NFT Collections</h1>
+        <div class="${"background-image svelte-1lyiawv"}" style="${"background-image: url(" + escape(redLines, true) + ")"}">${validate_component(CollectionButton, "CollectionButton").$$render($$result, {}, {}, {})}</div></div></div>
+<div class="${"big-spacer svelte-1lyiawv"}"></div>
 
 ${validate_component(ProgressArea, "ProgressArea").$$render($$result, {}, {}, {})}
-<div class="${"big-spacer svelte-1vxq0gi"}"></div>
+<div class="${"big-spacer svelte-1lyiawv"}"></div>
 
 ${`${validate_component(ContactArea, "ContactArea").$$render($$result, { resize: true }, {}, {})}`}
 </body>`;

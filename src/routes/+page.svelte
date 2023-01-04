@@ -85,7 +85,7 @@ const redLines = new URL('../images/RedMirrorImage.png', import.meta.url).href
 
     <div class="big-spacer"/>
     
-    <div class="background-image-redline" style="background-image: url({greenLines})">
+    <div class="background-image" style="background-image: url({greenLines})">
 
         <CollectionFields />
 
@@ -96,7 +96,7 @@ const redLines = new URL('../images/RedMirrorImage.png', import.meta.url).href
 
 
         <h1>The NFT Collections</h1>
-        <div class="background-image-redline" style="background-image: url({redLines})">
+        <div class="background-image" style="background-image: url({redLines})">
             <CollectionButton/>
         </div>
     </div>
@@ -133,13 +133,8 @@ const redLines = new URL('../images/RedMirrorImage.png', import.meta.url).href
         margin-top: 10px;
     }
 
-    .background-image{
-        background-repeat: no-repeat;
-        background-position: center;
-    }
 
-    .background-image-redline{
-        background-position: right;
+    .background-image{
         background-repeat: no-repeat;
         background-position: center;
     }

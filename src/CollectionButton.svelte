@@ -1,13 +1,12 @@
 <script>
 
 const pixelation = new URL('./images/Pixelation.png', import.meta.url).href;
-const soonImage = new URL('./images/ShibaWebsiteSoonCover.png', import.meta.url).href;
+const soonImage = new URL('./images/SoonCover.png', import.meta.url).href;
 
 let buttonSoonText = "Release soon";
 </script>
 
 
-  
   <div class="buttons">
 
     <button style="opacity: 1">
@@ -19,8 +18,8 @@ let buttonSoonText = "Release soon";
   <div class="spacer"/>
 
   <div class="buttons">
-    <button style="opacity: 0.9">
-      <img src={soonImage} alt={buttonSoonText} />
+    <button style="opacity: 1">
+      <img src={soonImage} alt='Strategic Movement(Soon)' />
       Collection: Strategic Movement
     </button>
   </div>
@@ -29,7 +28,7 @@ let buttonSoonText = "Release soon";
 
   <div class="buttons">
     <button style="opacity: 0.9">
-      <img src={soonImage} alt={buttonSoonText} />
+      <img src={soonImage} alt='To the Stars(Soon)' />
       Collection: To the Stars
     </button>
   </div>
@@ -38,7 +37,7 @@ let buttonSoonText = "Release soon";
 
   <div class="buttons">
     <button style="opacity: 0.9">
-      <img src={soonImage} alt={buttonSoonText} />
+      <img src={soonImage} alt='Load of Emotions(Soon)' />
       Collection: Load of Emotions
     </button>
   </div>
@@ -47,10 +46,11 @@ let buttonSoonText = "Release soon";
   
   <div class="buttons">
     <button style="opacity: 0.9">
-      <img src={soonImage} alt={buttonSoonText} />
+      <img src={soonImage} alt='Limited NFTs' />
       Limited NFTs
     </button>
   </div>
+
 
   <style>
     .buttons {
