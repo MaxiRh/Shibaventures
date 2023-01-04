@@ -73,7 +73,7 @@ const redLines = new URL('../images/RedMirrorImage.png', import.meta.url).href
 
 
 <div class="button-menu">
-    <div class="background-image-redline" style="background-image: url({blueLines})">
+    <div class="background-image-redline" style="background-image: url({blueLines}) alt='blueLine'">
         <div class="big-spacer"/>
         <div class="menu-area">
             <MenuButton/>
