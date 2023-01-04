@@ -73,19 +73,20 @@ const redLines = new URL('../images/RedMirrorImage.png', import.meta.url).href
 
 
 <div class="button-menu">
-    <div class="background-image-redline" style="background-image: url({blueLines}) alt='blueLine'">
+    <div class="background-image-redline" style="background-image: url({blueLines}); height:400px;">
         <div class="big-spacer"/>
         <div class="menu-area">
             <MenuButton/>
         </div>
     </div>
-    <div class="spacer"/>
+    
+    <div class="big-spacer"/>
     <h1>Burn proof section </h1>
     <BurnProof/>
 
     <div class="big-spacer"/>
     
-    <div class="background-image" style="background-image: url({greenLines})">
+    <div class="background-image" style="background-image: url({greenLines});">
 
         <CollectionFields />
 
@@ -96,7 +97,7 @@ const redLines = new URL('../images/RedMirrorImage.png', import.meta.url).href
 
 
         <h1>The NFT Collections</h1>
-        <div class="background-image" style="background-image: url({redLines})">
+        <div class="background-image" style="background-image: url({redLines});">
             <CollectionButton/>
         </div>
     </div>
@@ -137,7 +138,6 @@ const redLines = new URL('../images/RedMirrorImage.png', import.meta.url).href
     .background-image{
         background-repeat: no-repeat;
         background-position: center;
-        height: 400px;
     }
 
     .spacer {
