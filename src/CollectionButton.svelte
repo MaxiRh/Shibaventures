@@ -1,18 +1,64 @@
 <script>
-  export let buttonText = "default";
-  export let image = '';
-  export let released = false;
+
+const pixelation = new URL('./images/Pixelation.png', import.meta.url).href;
+const soonImage = new URL('./images/ShibaWebsiteSoonCover.png', import.meta.url).href;
+
+let buttonSoonText = "Release soon";
 </script>
 
 
   
   <div class="buttons">
 
-    <button style="opacity: {released ? 1 : 0.9}">
-      {#if image}
-      <img src={image} alt={buttonText} />
+    <button style="opacity: 1">
+      {#if pixelation}
+      <img src={pixelation} alt='Pixelation Collection' />
       {/if}
-      {buttonText}
+      Collection: Pixelation
+    </button>
+  </div>
+
+  <div class="spacer"/>
+
+  <div class="buttons">
+    <button style="opacity: 0.9">
+      {#if soonImage}
+      <img src={soonImage} alt={buttonSoonText} />
+      {/if}
+      Collection: Strategic Movement
+    </button>
+  </div>
+
+  <div class="spacer"/>
+
+  <div class="buttons">
+    <button style="opacity: 0.9">
+      {#if soonImage}
+      <img src={soonImage} alt={buttonSoonText} />
+      {/if}
+      Collection: To the Stars
+    </button>
+  </div>
+  
+  <div class="spacer"/>
+
+  <div class="buttons">
+    <button style="opacity: 0.9">
+      {#if soonImage}
+      <img src={soonImage} alt={buttonSoonText} />
+      {/if}
+      Collection: Load of Emotions
+    </button>
+  </div>
+  
+  <div class="spacer"/>
+  
+  <div class="buttons">
+    <button style="opacity: 0.9">
+      {#if soonImage}
+      <img src={soonImage} alt={buttonSoonText} />
+      {/if}
+      Limited NFTs
     </button>
   </div>
 
@@ -44,5 +90,9 @@
       width: 100%;
       height: auto;
     }
-
+    
+    .spacer {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
   </style>

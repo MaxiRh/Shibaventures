@@ -7,6 +7,8 @@
         showProgressBars = !showProgressBars;
     }
 
+    const backImage = new URL("./images/BackgroundThumbsUpShiba.png", import.meta.url).href
+
 </script>
 <div class="main-container">
     <div class="collection-progress" class:active ={showProgressBars}>
@@ -32,7 +34,7 @@
         {/if}
     </div>
     <div class="image-container">
-        <img class="image" src={"src/images/BackgroundThumbsUpShiba.png"} alt={''}/>
+        <img class="image" src={backImage} alt={''}/>
     </div>
 </div>
 

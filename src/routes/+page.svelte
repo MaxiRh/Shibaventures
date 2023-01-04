@@ -1,4 +1,4 @@
-<script src='https://unpkg.com/svelte@3/bundler/index.min.js' lang ="ts">
+<script lang ="ts">
 
 
 import CollectionButton from '../CollectionButton.svelte';
@@ -11,9 +11,10 @@ import BurnBar from '../BurnBar.svelte';
 import BurnProof from '../BurnProof.svelte';
 import { onMount } from 'svelte';
 
+export const prerender = true;
+
 let heigth = 0;
 let width = 0;
-let released = true;
 
 function handleResize() {
     width=window.innerWidth;
@@ -28,12 +29,17 @@ onMount(() => {
     window.addEventListener('resize', handleResize);
 });
 
+const imgUrl = new URL("../images/Shibaventures.png", import.meta.url).href
+const blueLines = new URL("../images/BackgroundBlueLines2.png", import.meta.url).href
+const greenLines = new URL("../images/BackgroundGreenLines.png", import.meta.url).href
+const redLines = new URL('../images/RedMirrorImage.png', import.meta.url).href
+
 </script>
 
 
 <body>
 <div class="header-image">
-    <img class="header-image" src="src/images/Shibaventures.png" alt="Shibaventures">
+    <img class="header-image" src={imgUrl} alt="Shibaventures">
 
     <div class="header-text">
         {#if width > 1000}
@@ -68,7 +74,7 @@ onMount(() => {
 
 
 <div class="button-menu">
-    <div class="background-image" style="background-image: url('src/images/BackgroundBlueLines2.png')">
+    <div class="background-image" style="background-image: url({blueLines})">
         <div class="big-spacer"/>
         <div class="menu-area">
             <MenuButton/>
@@ -80,7 +86,7 @@ onMount(() => {
 
     <div class="big-spacer"/>
     
-    <div class="background-image" style="background-image: url('src/images/BackgroundGreenLines.png')">
+    <div class="background-image" style="background-image: url({greenLines})">
 
         <CollectionFields />
 
@@ -91,30 +97,12 @@ onMount(() => {
 
 
         <h1>The NFT Collections</h1>
-        <div class="background-image" style="background-image: url('src/images/RedMirrorImage.png'); background-position: right">
-            <CollectionButton buttonText="Pixelation Collection" image="src/images/Pixelation.png" released={released}/>
-        
-        <div class="spacer"/>
-
-        <CollectionButton buttonText="Collection: Strategic Movement" image="src/images/ShibaWebsiteSoonCover.png"/>
-
-        <div class="spacer"/>
-
-        <CollectionButton buttonText="Collection: To the Stars" image="src/images/ShibaWebsiteSoonCover.png"/>
-
-        <div class="spacer"/>
-
-        <CollectionButton buttonText="Collection: Handfull of emotions" image="src/images/ShibaWebsiteSoonCover.png"/>
-
-        <div class="spacer"/>
-
-        <CollectionButton buttonText="Limited Collection" image="src/images/ShibaWebsiteSoonCover.png"/>
-
-        <div class="big-spacer"/>
-    </div>
+        <div class="background-image-redline" style="background-image: url({redLines})">
+            <CollectionButton/>
+        </div>
     </div>
 </div>
-
+<div class="big-spacer"/>
 
 <ProgressArea/>
 <div class="big-spacer"/>
@@ -147,6 +135,12 @@ onMount(() => {
     }
 
     .background-image{
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .background-image-redline{
+        background-position: right;
         background-repeat: no-repeat;
         background-position: center;
     }

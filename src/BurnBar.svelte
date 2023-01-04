@@ -4,6 +4,8 @@
     let currentValue=0;
     let maxValue = 10000000000;//One-hundret Billion(Milliarden)
 
+    const backImage = new URL('./images/WebsiteITsFine.png', import.meta.url).href
+
     function addPointstoNumbers(number:Number){
         return (number.toLocaleString('de-DE'));
     }
@@ -26,7 +28,7 @@
         <div class="burn-container" style="margin-left:{margin}%">
             <div id="progress-circle" style="{cssVarStyles}">{Math.round(progress*100)}%</div>
         </div>
-        <div class="burn-image">
+        <div class="burn-image" style="background-image: url({backImage})">
         </div>
     </div>
 </div>
@@ -52,7 +54,6 @@
     display: flex-end;
     align-items: right;
     margin-left: auto;
-    background-image: url('src/images/WebsiteITsFine.png');
     background-size:contain;
     background-position: center;
     background-repeat: no-repeat;

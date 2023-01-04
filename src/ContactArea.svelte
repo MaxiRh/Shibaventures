@@ -2,18 +2,21 @@
 
     export let resize:boolean = false;
 
+    const imageSelf = new URL("./images/MeMyselfandI.png", import.meta.url).href
+    const imageTwitter = new URL("./images/twitter.png", import.meta.url).href
+
 </script>
 
 <div class="main-container" style="{resize ? 'flex-direction:column;' : 'flex-direction:row;'}">
     <div class="portrait-left">
-        <img class="image-self" src="src/images/MeMyselfandI.png" alt=""/>
+        <img class="image-self" src={imageSelf} alt=""/>
     </div>
     <div class="contact-right">
         <h1>Contact</h1>
         <h3>Follow me on Twitter:</h3>
         <div class="twitter-surrounding">
             <a href="https://twitter.com/Maxi49009969">
-                <img class="twitter-image" src="src/images/twitter.png" alt="Twitter logo">
+                <img class="twitter-image" src={imageTwitter} alt="Twitter logo">
           </a>
         </div>
         <br/>
