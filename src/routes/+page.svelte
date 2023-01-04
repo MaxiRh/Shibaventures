@@ -73,13 +73,13 @@ const redLines = new URL('../images/RedMirrorImage.png', import.meta.url).href
 
 
 <div class="button-menu">
-    <div class="background-image-redline" style="background-image: url({blueLines}); height:400px;">
+    <div class="background-image">
         <div class="big-spacer"/>
         <div class="menu-area">
             <MenuButton/>
         </div>
     </div>
-    
+
     <div class="big-spacer"/>
     <h1>Burn proof section </h1>
     <BurnProof/>
@@ -140,10 +140,6 @@ const redLines = new URL('../images/RedMirrorImage.png', import.meta.url).href
         background-position: center;
     }
 
-    .spacer {
-        margin-top: 40px;
-        margin-bottom: 40px;
-    }
 
     .big-spacer {
 
