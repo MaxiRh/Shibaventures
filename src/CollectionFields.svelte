@@ -1,8 +1,8 @@
 <script>
-    const blueLines = new URL("./images/SoonCover.png", import.meta.url).href
+    const greenLines = new URL("./images/BackGroundGreenLines.png", import.meta.url).href
 </script>
 
-<div class="background-image" style="background-image: url({blueLines});">
+<div class="background-image" style="background-image: url({greenLines});">
 <h1>Important notes</h1>
     <div class="container">
         

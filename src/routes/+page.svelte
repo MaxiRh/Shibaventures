@@ -29,8 +29,6 @@ onMount(() => {
 });
 
 const imgUrl = new URL("../images/Shibaventures.png", import.meta.url).href
-const blueLines = new URL("../images/BackgroundBlueLines2.png", import.meta.url).href
-const greenLines = new URL("../images/BackgroundGreenLines.png", import.meta.url).href
 const redLines = new URL('../images/RedMirrorImage.png', import.meta.url).href
 
 </script>
@@ -86,7 +84,7 @@ const redLines = new URL('../images/RedMirrorImage.png', import.meta.url).href
 
     <div class="big-spacer"/>
     
-    <div class="background-image" style="background-image: url({greenLines});">
+    <div class="background-image">
 
         <CollectionFields />
 

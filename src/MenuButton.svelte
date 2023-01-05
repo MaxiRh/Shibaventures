@@ -68,8 +68,10 @@
         {title: "About"}
     ]
 
+    const blueLines = new URL("./images/BackGroundBlueLines2.png", import.meta.url).href
+
 </script>
-<body>
+<body class="background-image" style="background-image: url({blueLines});">
 <div class="menu-container">
 
     <div class="button-container" id="menubuttons">
@@ -161,6 +163,11 @@ body{
       width: 100%;
       position:absolute;
       z-index: 1;
+    }
+
+    .background-image{
+        background-repeat: no-repeat;
+        background-position: center;
     }
 
     .active-button {
