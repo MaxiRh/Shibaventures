@@ -21,9 +21,9 @@
         </button>
         {#if showProgressBars}
             <div class="spacer"/>
-            <ProgressBar progress={38} description="Pixelation Collection:" text="This collection is almost done." maxAmount={42} date="January 2023"/>
+            <ProgressBar progress={45} description="Pixelation Collection:" text="This collection is almost done." maxAmount={50} date="January 2023"/>
             <div class="spacer"/>
-            <ProgressBar progress={4} description="Strategic Movement:" text="This collection just got started" maxAmount={36} date="Mid February 2023"/>
+            <ProgressBar progress={9} description="Strategic Movement:" text="This collection just got started" maxAmount={36} date="Mid February 2023"/>
             <div class="spacer"/>
             <ProgressBar progress={0} description="To the Stars:" text="" date="Mid March 2023"/>
             <div class="spacer"/>

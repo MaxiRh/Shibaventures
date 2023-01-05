@@ -18,7 +18,7 @@ let buttonSoonText = "Release soon";
   <div class="spacer"/>
 
   <div class="buttons">
-    <button style="opacity: 1">
+    <button style="opacity: 0.9">
       <img src={soonImage} alt='Strategic Movement(Soon)' />
       Collection: Strategic Movement
     </button>
