@@ -1,7 +1,7 @@
 <script>
     import ProgressBar from './progressBar.svelte';
 
-    let showProgressBars = true;
+    let showProgressBars = false;
 
     function toggleProgressBars(){
         showProgressBars = !showProgressBars;
@@ -27,7 +27,9 @@
             <div class="spacer"/>
             <ProgressBar progress={0} description="To the Stars:" text="" date="Mid March 2023"/>
             <div class="spacer"/>
-            <ProgressBar progress={0} description="Handful of Emotions:" text="" date="May 2023"/>
+            <ProgressBar progress={0} description="Shibaloons:" text="" date="Mid April 2023"/>
+            <div class="spacer"/>
+            <ProgressBar progress={0} description="Handful of Emotions:" text="" date="June 2023"/>
             <div class="spacer"/>
             <ProgressBar progress={0} description="Limited Edition:" text="" date="continuously"/>
             <div class="spacer"/>

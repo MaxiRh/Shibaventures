@@ -30,6 +30,7 @@ onMount(() => {
 
 const imgUrl = new URL("../images/Shibaventures.png", import.meta.url).href
 const redLines = new URL('../images/RedMirrorImage.png', import.meta.url).href
+const roadmap = new URL('../images/Roadmap2023.png', import.meta.url).href
 
 </script>
 
@@ -105,6 +106,13 @@ const redLines = new URL('../images/RedMirrorImage.png', import.meta.url).href
 <ProgressArea/>
 <div class="big-spacer"/>
 
+<div class="roadmap-container">
+    <h1>Roadmap 2023</h1>
+    <div class="spacer"/>
+    <img class="roadmap-image" src={roadmap} alt=""/>
+</div>
+
+<div class="big-spacer"/>
 {#if width <1000}
     <ContactArea resize={true}/>
 {:else}
@@ -144,6 +152,10 @@ const redLines = new URL('../images/RedMirrorImage.png', import.meta.url).href
         margin-bottom: 300px;
     }
 
+    .spacer {
+        margin-bottom: 100px;
+    }
+
     h1 {
         text-align: center;
     }
@@ -162,6 +174,17 @@ const redLines = new URL('../images/RedMirrorImage.png', import.meta.url).href
 
     body{
         background: linear-gradient(to bottom, #FBCE8C, #aa8650)
+    }
+
+    .roadmap-container{
+        position: relative;
+        justify-content: center;
+        width:80%;
+    }
+    
+    .roadmap-image{
+        width: 100%;
+        height: auto;
     }
 
     * {

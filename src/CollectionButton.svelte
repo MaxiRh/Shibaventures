@@ -3,7 +3,6 @@
 const pixelation = new URL('./images/Pixelation.png', import.meta.url).href;
 const soonImage = new URL('./images/SoonCover.png', import.meta.url).href;
 
-let buttonSoonText = "Release soon";
 </script>
 
 
@@ -37,8 +36,17 @@ let buttonSoonText = "Release soon";
 
   <div class="buttons">
     <button style="opacity: 0.9">
+      <img src={soonImage} alt='Shibaloons(Soon)' />
+      Collection: Shibaloons
+    </button>
+  </div>
+  
+  <div class="spacer"/>
+
+  <div class="buttons">
+    <button style="opacity: 0.9">
       <img src={soonImage} alt='Load of Emotions(Soon)' />
-      Collection: Load of Emotions
+      Collection: Emotions
     </button>
   </div>
   
