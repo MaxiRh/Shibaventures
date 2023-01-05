@@ -1,5 +1,5 @@
 <script>
-    const blueLines = new URL("../images/Shibaventures.png", import.meta.url).href
+    const blueLines = new URL("./images/SoonCover.png", import.meta.url).href
 </script>
 
 <div class="background-image" style="background-image: url({blueLines});">
