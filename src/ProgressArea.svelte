@@ -21,7 +21,7 @@
         </button>
         {#if showProgressBars}
             <div class="spacer"/>
-            <ProgressBar progress={45} description="Pixelation Collection:" text="This collection is almost done." maxAmount={50} date="January 2023"/>
+            <ProgressBar progress={45} description="Pixelation :" text="This collection is almost done." maxAmount={50} date="January 2023"/>
             <div class="spacer"/>
             <ProgressBar progress={9} description="Strategic Movement:" text="This collection just got started" maxAmount={36} date="Mid February 2023"/>
             <div class="spacer"/>
@@ -29,7 +29,7 @@
             <div class="spacer"/>
             <ProgressBar progress={0} description="Shibaloons:" text="" date="Mid April 2023"/>
             <div class="spacer"/>
-            <ProgressBar progress={0} description="Handful of Emotions:" text="" date="June 2023"/>
+            <ProgressBar progress={0} description="Emotions:" text="" date="June 2023"/>
             <div class="spacer"/>
             <ProgressBar progress={0} description="Limited Edition:" text="" date="continuously"/>
             <div class="spacer"/>
@@ -41,6 +41,28 @@
 </div>
 
 <style>
+    
+    @media screen and (max-width: 1000px) {
+        
+        .collection-progress {
+            margin-left: 0%;
+            width: 100%;
+            justify-content: left;
+            border: 2px solid black;
+            border-radius: 0px;
+            z-index:1;
+            min-width: 450px;
+        }
+
+        .collection-progress.active {
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            background-color: rgb(52, 52, 54, 0.7);
+            color: white;
+        }
+
+
+    }
 
     .main-container {
         position:relative;
@@ -53,11 +75,10 @@
             position:absolute;
             top: 0;
             right: 0;
-                
     }
 
     .image{
-        max-width: 100%;
+        max-width: 60%;
         max-height: 700px;
         object-fit: cover;
     }
@@ -66,6 +87,7 @@
         width: 100%;
         justify-content: left;
         height: 40px;
+        min-height: 65px;
         position:relative;
         display: flex;
         justify-content: space-evenly;

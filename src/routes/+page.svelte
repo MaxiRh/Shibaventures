@@ -122,6 +122,14 @@ const roadmap = new URL('../images/Roadmap2023.png', import.meta.url).href
 
 <style>
 
+    @media screen and (max-width: 1000px) {
+        .roadmap-container{
+            position: relative;
+            justify-content: center;
+            min-width:100%;
+        }
+    }
+
     .header-text{
         width:80%;
         margin: 0 auto;
@@ -173,7 +181,11 @@ const roadmap = new URL('../images/Roadmap2023.png', import.meta.url).href
 
 
     body{
-        background: linear-gradient(to bottom, #FBCE8C, #aa8650)
+        background: linear-gradient(to bottom, #FBCE8C, #aa8650);
+        height: 100%;
+        width: 100%;
+        margin: 0%;
+        margin-right:0;
     }
 
     .roadmap-container{

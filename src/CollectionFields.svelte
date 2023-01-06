@@ -24,6 +24,20 @@
 </div>
 
 <style>
+
+    /* Screen smaller than 1000px */
+    @media screen and (max-width: 1000px){
+
+        .collection-description {
+            border: 2px solid black;
+            border-radius: 25px;
+            background-color: rgba(0,0,0,0.6);
+            color: #fff;
+            min-width:70%;
+        }
+
+    }
+
     .container{
         position: relative;
         display: flex;

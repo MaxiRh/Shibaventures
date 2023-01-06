@@ -61,6 +61,20 @@ const soonImage = new URL('./images/SoonCover.png', import.meta.url).href;
 
 
   <style>
+    @media screen and (max-width:1000px) {
+      button {
+        font-size: 100%;
+        padding: 2vw;
+        padding-top: 3vw;
+        padding-bottom: 3vw;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+        min-width: 90%;
+      }
+    }
+
     .buttons {
       display: flex;
       justify-content: center;

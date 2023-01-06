@@ -148,21 +148,145 @@
 body{
     font-family: "heebo",Helvetica,Arial,sans-serif;
 }
+    /* Screen smaller than 1000px */
+    @media screen and (max-width: 1000px){
+        .menu-container {
+            position:relative;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
 
-    .menu-container {
-        position:relative;
-        display: flex;
-        justify-content: space-evenly;
+        .paragraph-container {
+            /* Hide the text paragraphs by default */
+            display: none;
+            margin-top: 1%;
+            display: flex;
+            text-align: left;
+            width: 50%;
+            min-height: 350px;
+            z-index:1;
+            margin-left: 5%;
+        }
+
+        .paragraph-container.display {
+            border: 1px solid black;
+            background-color: rgba(0,0,0,0.6);
+            color: #fff;
+            z-index: 1;
+            border-radius: 25px;
+            min-width: 90%;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: row;
+            width: 50%;
+            z-index: 1;
+            padding-top:0%;
+            margin-left:10%;
+        }
+
+        .active-button {
+            background-color: rgb(52, 52, 54);
+            color:white;
+            display: block;
+            width: 10%;
+            height: 75px;
+            min-width: 100px;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: 0.3s;
+            margin: 1%;
+        }
+
+        .about-buttons {
+            /* Default styles for the buttons */
+            display: block;
+            width: 10%;
+            height: 75px;
+            min-width: 100px;
+            border: 2px solid black;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: 0.3s;
+            margin: 1%;
+            background-color: #aa8650;
+            color: white;
+        }
+
     }
 
-    /* Style the container */
-    .button-container {
-      display: absolute; /* Use flex layout to align the buttons */
-      /*justify-content: center; /* Distribute the buttons evenly across the container */
-      flex-direction: column;
-      width: 100%;
-      position:absolute;
-      z-index: 1;
+
+
+    /* Screen bigger than 1001 px */
+    @media screen and (min-width: 1001px){
+        .menu-container {
+            position:relative;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: row;
+        }
+
+        .button-container {
+            display: absolute;
+            flex-direction: column;
+            width: 100%;
+            position:absolute;
+            z-index: 1;
+        }
+
+        .active-button {
+            background-color: rgb(52, 52, 54);
+            color:white;
+            display: block;
+            width: 10%;
+            height: 75px;
+            min-width: 75px;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: 0.3s;
+            margin-left: 15%;
+            margin-top: 1%;
+        }
+
+        .about-buttons {
+            /* Default styles for the buttons */
+            display: block;
+            width: 10%;
+            height: 75px;
+            min-width: 75px;
+            border: 2px solid black;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: 0.3s;
+            margin-left: 10%;
+            margin-top: 1%;
+            background-color: #aa8650;
+            color: white;
+        }
+
+        .paragraph-container {
+            /* Hide the text paragraphs by default */
+            display: none;
+            margin-top: 1%;
+            display: flex;
+            text-align: left;
+            width: 50%;
+            min-height: 350px;
+            z-index:1;
+        }
+
+        .paragraph-container.display {
+            border: 1px solid black;
+            background-color: rgba(0,0,0,0.6);
+            color: #fff;
+            z-index: 1;
+            border-radius: 25px;
+            min-width: 400px;
+        }
     }
 
     .background-image{
@@ -170,56 +294,7 @@ body{
         background-position: center;
     }
 
-    .active-button {
-        background-color: rgb(52, 52, 54);
-        color:white;
-        display: block;
-        width: 10%;
-        height: 75px;
-        border: none;
-        border-radius: 15px;
-        cursor: pointer;
-        transition: 0.3s;
-        margin-left: 15%;
-        margin-top: 1%;
-    }
-
-  
-    /* Style the buttons */
-    .about-buttons {
-      /* Default styles for the buttons */
-      display: block;
-      width: 10%;
-      height: 75px;
-      border: 2px solid black;
-      border-radius: 15px;
-      cursor: pointer;
-      transition: 0.3s;
-      margin-left: 10%;
-      margin-top: 1%;
-      background-color: #aa8650;
-      color: white;
-    }
-  
-    /* Style the text paragraphs */
-    .paragraph-container {
-      /* Hide the text paragraphs by default */
-      display: none;
-      margin-top: 1%;
-      display: flex;
-      text-align: left;
-      width: 50%;
-      min-height: 350px;
-      z-index:1;
-    }
-
-    .paragraph-container.display {
-        border: 1px solid black;
-        background-color: rgba(0,0,0,0.6);
-        color: #fff;
-        z-index: 1;
-        border-radius: 25px;
-    }
+    
 
     @media (max-width: 400px) {
         .paragraph-container {
