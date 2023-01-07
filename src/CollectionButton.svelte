@@ -6,13 +6,13 @@ const soonImage = new URL('./images/SoonCover.png', import.meta.url).href;
 </script>
 
 
-  <div class="buttons">
 
-    <button style="opacity: 1">
-      <img src={pixelation} alt='Pixelation Collection' />
-      Collection: Pixelation
-    </button>
-  </div>
+    <a class="buttons" href='https://opensea.io/de-DE/collection/shibventures'>
+      <button style="opacity: 1">
+        <img src={pixelation} alt='Pixelation Collection' />
+        Collection: Pixelation
+      </button>
+    </a>
 
   <div class="spacer"/>
 
