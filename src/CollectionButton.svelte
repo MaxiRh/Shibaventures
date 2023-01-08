@@ -6,7 +6,7 @@ const soonImage = new URL('./images/SoonCover.png', import.meta.url).href;
 </script>
 
 
-
+<body>
     <a class="buttons" href='https://opensea.io/collection/shibventures'>
       <button style="opacity: 1">
         <img src={pixelation} alt='Pixelation Collection' />
@@ -58,7 +58,7 @@ const soonImage = new URL('./images/SoonCover.png', import.meta.url).href;
       Limited NFTs
     </button>
   </div>
-
+</body>
 
   <style>
     @media screen and (max-width:1000px) {
@@ -72,6 +72,12 @@ const soonImage = new URL('./images/SoonCover.png', import.meta.url).href;
         cursor: pointer;
         transition: 0.3s;
         min-width: 90%;
+      }
+    }
+
+    @media screen and (max-width:500px) {
+      body {
+        min-width:450px;
       }
     }
 

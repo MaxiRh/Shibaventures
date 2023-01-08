@@ -336,6 +336,15 @@ body{
             min-width: 500px;
         }
 
+        .paragraph-container.display {
+            border: 1px solid black;
+            background-color: rgba(0,0,0,0.6);
+            color: #fff;
+            z-index: 1;
+            border-radius: 25px;
+            max-width: 450px;
+        }
+
     }
 
     .image-container {
