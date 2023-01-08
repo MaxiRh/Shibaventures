@@ -35,7 +35,7 @@ const roadmap = new URL('../images/Roadmap2023.png', import.meta.url).href
 </script>
 
 
-<body>
+<body style="min-width: {width}">
 <div class="header-image">
     <img class="header-image" src={imgUrl} alt="Shibaventures">
 
@@ -186,7 +186,6 @@ const roadmap = new URL('../images/Roadmap2023.png', import.meta.url).href
         width: 100%;
         margin: 0%;
         margin-right:0;
-        min-width:100%;
     }
 
     .roadmap-container{
