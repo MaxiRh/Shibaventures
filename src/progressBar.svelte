@@ -20,7 +20,6 @@
             {getPercentage()}%
         </div>
     </div>
-    <p>Due to: {date}</p>
     {#if progress === 0}
         <p>Not started yet!</p>
     {:else if progress !== maxAmount}
