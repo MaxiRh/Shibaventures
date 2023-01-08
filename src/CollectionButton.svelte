@@ -77,7 +77,10 @@ const soonImage = new URL('./images/SoonCover.png', import.meta.url).href;
 
     @media screen and (max-width:500px) {
       body {
-        min-width:450px;
+        min-width:500px;
+      }
+      button{
+        min-width: 450px;
       }
     }
 

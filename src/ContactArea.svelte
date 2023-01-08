@@ -25,6 +25,20 @@
 </div>
 
 <style>
+
+    @media screen and (max-width:500px) {
+      .main-container{
+        min-width: 500px;
+        margin-left:5% auto;
+      }
+    }
+
+    @media screen and (min-width:500px) {
+      .main-container{
+        margin:10px auto;
+      }
+    }
+
     .main-container {
         border-color: 2px solid black;
         width: 90%;
@@ -33,7 +47,6 @@
         display: flex;
         justify-content: space-evenly;
         height: auto;
-        margin:10px auto;
         border-radius: 10px;
     }
 
