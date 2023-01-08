@@ -43,7 +43,7 @@
         .background-image{
             background-repeat: no-repeat;
             background-position: center;
-            min-width: 600px;
+            min-width: 500px;
         }
 
     }
