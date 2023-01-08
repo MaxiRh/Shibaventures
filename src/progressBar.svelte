@@ -3,7 +3,6 @@
     export let description ="";
     export let text="";
     export let maxAmount = 100;
-    export let date = "";
 
     function getPercentage() {
         return Math.round((100/maxAmount)*progress);

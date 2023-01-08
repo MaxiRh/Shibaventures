@@ -21,17 +21,17 @@
         </button>
         {#if showProgressBars}
             <div class="spacer"/>
-            <ProgressBar progress={50} description="Pixelation :" text="This collection is almost done." maxAmount={50} date="January 2023"/>
+            <ProgressBar progress={50} description="Pixelation :" text="This collection is almost done." maxAmount={50}/>
             <div class="spacer"/>
-            <ProgressBar progress={9} description="Strategic Movement:" text="This collection just got started" maxAmount={36} date="Mid February 2023"/>
+            <ProgressBar progress={9} description="Strategic Movement:" text="This collection just got started" maxAmount={36}/>
             <div class="spacer"/>
-            <ProgressBar progress={0} description="To the Stars:" text="" date="Mid March 2023"/>
+            <ProgressBar progress={0} description="To the Stars:" text=""/>
             <div class="spacer"/>
-            <ProgressBar progress={0} description="Shibaloons:" text="" date="Mid April 2023"/>
+            <ProgressBar progress={0} description="Shibaloons:" text=""/>
             <div class="spacer"/>
-            <ProgressBar progress={0} description="Emotions:" text="" date="June 2023"/>
+            <ProgressBar progress={0} description="Emotions:" text=""/>
             <div class="spacer"/>
-            <ProgressBar progress={0} description="Limited Edition:" text="" date="continuously"/>
+            <ProgressBar progress={0} description="Limited Edition:" text=""/>
             <div class="spacer"/>
         {/if}
     </div>
