@@ -28,6 +28,10 @@ onMount(() => {
     window.addEventListener('resize', handleResize);
 });
 
+function getWidth(){
+    return (width*0.8);
+}
+
 const imgUrl = new URL("../images/Shibaventures.png", import.meta.url).href
 const redLines = new URL('../images/RedMirrorImage.png', import.meta.url).href
 const roadmap = new URL('../images/Roadmap2023.png', import.meta.url).href
@@ -96,7 +100,7 @@ const roadmap = new URL('../images/Roadmap2023.png', import.meta.url).href
 
 
         <h1>The NFT Collections</h1>
-        <div class="background-image" style="background-image: url({redLines});">
+        <div class="background-image" style="background-image: url({redLines}); min-width:{getWidth()}">
             <CollectionButton/>
         </div>
     </div>

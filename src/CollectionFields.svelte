@@ -38,6 +38,16 @@
 
     }
 
+    @media screen and (max-width: 500px){
+
+        .background-image{
+            background-repeat: no-repeat;
+            background-position: center;
+            min-width: 600px;
+        }
+
+    }
+
     .container{
         position: relative;
         display: flex;

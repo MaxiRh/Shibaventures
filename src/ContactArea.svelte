@@ -20,7 +20,7 @@
           </a>
         </div>
         <br/>
-        ETH Address: 0xbb94D89892f6243BD5A6d2aa44C3246BCD2686Ba
+        <p>ETH Address: 0xbb94D89892f6243BD5A6d2aa44C3246BCD2686Ba</p>
     </div>
 </div>
 

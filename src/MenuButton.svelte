@@ -330,6 +330,12 @@ body{
             color: white;
         }
 
+        .background-image{
+            background-repeat: no-repeat;
+            background-position: center;
+            min-width: 600px;
+        }
+
     }
 
     .image-container {
