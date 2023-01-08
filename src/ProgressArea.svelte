@@ -60,6 +60,26 @@
             background-color: rgb(52, 52, 54, 0.7);
             color: white;
         }
+    }
+
+    @media screen and (max-width: 500px) {
+        
+        .collection-progress {
+            margin-left: 0%;
+            width: 100%;
+            justify-content: left;
+            border: 2px solid black;
+            border-radius: 0px;
+            z-index:1;
+            min-width: 80%;
+        }
+
+        .collection-progress.active {
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            background-color: rgb(52, 52, 54, 0.7);
+            color: white;
+        }
 
 
     }
