@@ -60,10 +60,13 @@
     }
 
     .image-self {
-        height:350px;
-        width: auto;
+        height:auto;
+        min-height:200px;
+        min-width: 200px;
+        width: 30%;
         align-self: left;
-        padding:15%;
+        padding:10%;
+        padding-top: 15%;
     }
 
     .twitter-image{
