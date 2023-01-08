@@ -65,11 +65,11 @@
     @media screen and (max-width: 500px) {
         
         .collection-progress {
-            margin-left: 10%;
+            margin-left: 10px;
             width: 100%;
             border-radius: 0px;
             z-index:1;
-            min-width: 400px;
+            min-width: 480px;
         }
     }
 
