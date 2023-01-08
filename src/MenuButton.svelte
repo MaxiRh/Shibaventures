@@ -296,12 +296,40 @@ body{
 
     
 
-    @media (max-width: 400px) {
+    @media (max-width: 500px) {
         .paragraph-container {
             position: relative;
             width:100%;
             text-align:center;
         }
+
+        .active-button {
+            background-color: rgb(52, 52, 54);
+            color:white;
+            display: block;
+            width: 10%;
+            height: 50px;
+            min-width: 70px;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            margin: 1%;
+        }
+
+        .about-buttons {
+            /* Default styles for the buttons */
+            display: block;
+            width: 10%;
+            height: 50px;
+            min-width: 70px;
+            border: 2px solid black;
+            border-radius: 15px;
+            cursor: pointer;
+            margin: 1%;
+            background-color: #aa8650;
+            color: white;
+        }
+
     }
 
     .image-container {
