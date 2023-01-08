@@ -100,7 +100,7 @@ const roadmap = new URL('../images/Roadmap2023.png', import.meta.url).href
 
 
         <h1>The NFT Collections</h1>
-        <div class="background-image" style="background-image: url({redLines}); min-width:{getWidth()}">
+        <div class="background-image" style="background-image: url({redLines});">
             <CollectionButton/>
         </div>
     </div>
@@ -181,8 +181,8 @@ const roadmap = new URL('../images/Roadmap2023.png', import.meta.url).href
         justify-content: center;
         width: 100%;
         height: auto;
+        min-width:450px;
     }
-
 
     body{
         background: linear-gradient(to bottom, #FBCE8C, #aa8650);
