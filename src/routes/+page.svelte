@@ -136,6 +136,10 @@ const roadmap = new URL('../images/Roadmap2023.png', import.meta.url).href
 
     @media screen and (max-width: 500px) {
         .background-image{
+            min-width:500px;
+        }
+
+        .roadmap-image{
             min-width:450px;
         }
     }
